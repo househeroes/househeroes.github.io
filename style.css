@@ -1,0 +1,210 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:400,700|Carter+One|Merriweather:900');
+
+/*text areas*/
+p{
+font-family: 'Alegreya SC',serif;
+text-align: left;
+font-size: 10pt ;
+background-color: rgba(192, 170, 252, 0.178);
+border: 1px solid rgba(255, 121, 19, 0.623);
+margin:  1em;
+padding: 1em;
+}
+h1{
+
+font-family: 'Merriweather', serif;
+text-decoration: underline; 
+text-decoration-color: rgba(255, 166, 0, 0.527);
+color:rgb(255, 125, 19);
+text-align: center;
+            }
+h2, h3{
+
+font-family: 'Carter One', cursive; 
+font-style: italic;
+color: black;
+text-align: center;
+text-decoration-color: rgba(255, 166, 0, 0.527);
+color:rgb(255, 125, 19);
+    }
+em{
+text-decoration: underline;
+}
+a{
+color:rgb(255, 207, 47);
+}
+:visited {
+color:rgb(255, 207, 47);
+
+}
+.clickbox{
+color:rgb(245, 158, 45);
+text-decoration: none;
+display: block;
+}
+
+
+/*BODY STYLINGS*/
+body{
+background-image: url(src/background.jpg);
+background-position: center center;
+background-attachment: fixed;
+background-size: 100%;
+color:rgb(245, 158, 45);
+padding: none;
+margin: none;
+}
+
+#logoframe{
+width:  20%;
+float: left;
+margin: 2em;
+border: 4px double;
+background-color: rgba(255, 255, 255, 0.397);
+}
+
+#logoframe img{
+width: 100%;
+}
+
+#shortcuts{
+    float: right;
+    margin: none;
+    width: 10%;
+}
+#mobileshortcuts{
+    float:right;
+    margin: none;
+    color: white;
+    font-size:7pt;
+    text-align: right;
+    display:none;
+}
+#mobileshortcuts a{
+    color: white;
+}
+
+/*BODY FRAME START*/
+#bodyframe{
+width: auto;
+border: 2px solid green;
+margin: auto;
+
+}
+    /*ASIDE FRAMES START*/
+    #leftframe, #rightframe{
+        background-color: rgba(14, 14, 24, 0.808);
+        border: 4px double black;
+        width: 20%;
+        font-size: 8;
+        padding: .25em;
+    }
+    #leftframe{float: left; clear: left;}
+    #rightframe{float: right;}
+
+        /*(INCLUDES RIGHT CONTENT AREA TOO!!!)*/
+        .sidebar{
+            background-color: rgba(192, 170, 252, 0.178);
+            width:90%;
+            height:90%;
+            padding: 1%;
+            border: 4px double white;
+            margin: auto;
+        }
+    /*LEFT FRAME END*/
+
+        /*CENTER FRAME START*/
+    #centerframe{
+        width:51%;
+        margin: 0 24%;
+        position: absolute;
+    }
+    .centerbox{
+        background-color: rgba(14, 14, 24, 0.808);
+        border: 6px double black;
+        padding: .5em 0 ;
+    }
+        #largelogo{
+            margin: 2% 10%;
+            border: 6px double;
+            padding: 3%;
+            background-color: rgba(255, 255, 255, 0.397);
+        }
+        #largelogo img{
+            width: 100%;
+        }
+        main{
+            background-color: rgba(192, 170, 252, 0.075);
+            width: 75%;
+            height: 90%;
+            margin: auto;
+            padding: 2%;
+            font-size: 10;
+            border: 6px double white;
+        }
+        #bottom{
+            color: white;
+            border: solid white;
+            margin: 2em auto;
+            width: 60%;
+            font-size: 10pt;
+            letter-spacing: 1px;
+            padding:0 4%;
+            font-style: italic;
+        }
+        /*CENTER FRAME END*/
+        /* ABOUT AUTHOR */
+        #author{
+            width:15%;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            margin: 1em;
+        }
+        h3{
+
+        }
+/*BODY FRAME END*/
+
+/*media queries*/
+@media screen and (max-width: 1440px){
+    body{
+        background-size: 1440px 1080px ;
+        background-repeat: no-repeat;
+        }
+}
+
+@media screen and (max-width: 1000px){
+    #shortcuts{
+        display: none;
+    }
+    #mobileshortcuts{
+        display:block;
+    }
+    #centerframe{
+        position: relative;
+        float: left;
+        clear: both;
+    }
+    #leftframe, #centerframe, #rightframe{
+        width: 90%;
+        float: none;
+        margin: 1% 5%;
+    }
+    #left, #right, main {
+        width: 90%;
+        margin: auto;
+    }
+h1, p {
+        font-size: 9pt;
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        background-size: 1440px 100%;
+    }
+    h1, p {
+        font-size: 7pt;
+    }
+}
