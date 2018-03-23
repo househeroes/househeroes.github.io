@@ -42,6 +42,10 @@ color:rgb(255, 207, 47);
 color:rgb(245, 158, 45);
 text-decoration: none;
 display: block;
+
+}
+:hover {
+    color: darkorange;
 }
 
 
@@ -133,6 +137,9 @@ margin: auto;
         }
         #largelogo img{
             width: 100%;
+        }
+        #quote {
+            text-align: center;
         }
         main{
             background-color: rgba(192, 170, 252, 0.075);
